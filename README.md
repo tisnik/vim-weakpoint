@@ -1,4 +1,4 @@
-# weakpoint
+# vim-weakpoint
 
 Simple slideshow tool
 
