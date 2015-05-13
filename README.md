@@ -7,7 +7,7 @@ Simple slideshow tool
 With [pathogen.vim](https://github.com/tpope/vim-pathogen):
 
     cd ~/.vim/bundle
-    git clone git://github.com/tisnik
+    git clone git://github.com/tisnik/vim-weakpoint
 
 ## Usage
 

@@ -14,7 +14,7 @@ REQUIREMENTS                                    *weakpoint-requirements*
 INSTALLATION                                    *weakpoint-installation*
 
     cd ~/.vim/bundle
-    git clone git://github.com/tisnik
+    git clone git://github.com/tisnik/vim-weakpoint
 
 USAGE                                           *weakpoint-usage* *:WeakPoint*
  >
