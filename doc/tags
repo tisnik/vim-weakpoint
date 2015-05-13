@@ -1,0 +1,8 @@
+:WeakPoint	weakpoint.txt	/*:WeakPoint*
+WeakPoint	weakpoint.txt	/*WeakPoint*
+weakpoint	weakpoint.txt	/*weakpoint*
+weakpoint-installation	weakpoint.txt	/*weakpoint-installation*
+weakpoint-license	weakpoint.txt	/*weakpoint-license*
+weakpoint-requirements	weakpoint.txt	/*weakpoint-requirements*
+weakpoint-usage	weakpoint.txt	/*weakpoint-usage*
+weakpoint.txt	weakpoint.txt	/*weakpoint.txt*
