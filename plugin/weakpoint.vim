@@ -26,7 +26,7 @@ function! s:AfterLastSlide()
     return s:index >= len(s:slides)
 endfunction
 
-" Zobrazeni predchoziho slajdu
+" Zobrazeni nasledujiciho slajdu
 function! s:ShowNextSlide()
     let s:index += 1
     if s:AfterLastSlide()
@@ -35,7 +35,7 @@ function! s:ShowNextSlide()
     call s:ShowActualSlide()
 endfunction
 
-" Zobrazeni nasledujiciho slajdu
+" Zobrazeni predchoziho slajdu
 function! s:ShowPrevSlide()
     let s:index -= 1
     if s:BeforeFirstSlide()
