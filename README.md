@@ -52,7 +52,69 @@ it is **strongly recomended** to have also
     
 in `/.vimrc `; to avoid unexpected behavior of markdown during presentations (like auto folding or corrupted tables)
 
+## Single file presentation
+The plaintext presentations (especially markdowned) may be awesome for some cases, however *creating* them with slide per file can be extremely uncomfortable. To help with this issue `~/.vim/bundle/vim-weakpoint/WeekPointSplitter.lua` was added. This lua (which you already have) script requires lua-posix (which you likely have too).
 
+This allows you to write single file presentation, eg:
+<pre>
+# WeakPoint markdown presentation
+	* vim-weakpoint + vim-markdown are **awesome**
+		* allows code `like this`
+		* allows bullets
+		* allows *italic*
+		=> creates non disturbing presentation with all comfort
+   * Above you can see that also errors in parsing can be useful
+   * it also allows http://some.url/highlighted/clickable ,  cool!
+
+## Folding
+Unluckily folding must be disabled, and various levels of headlines are not distinguished
+--PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE--
+# Tables
+ 			cool	diff-able	images
+WeakPoint	x		x			only via url
+PowerPoint	no		no			depends on your opinion on cliparts
+
+So they works to...
+--PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE--
+# Code
+single `code` is working. How does multi-line?
+```
+it can
+rocks too!
+```
+the one with empty lines:
+
+	code
+	is it
+	right
+
+This is no more code
+	HTH
+</pre>
+This file can then can be processed like eg:
+`lua  ~/.vim/bundle/vim-weakpoint/WeekPointSplitter.lua  ~/Desktop/examplePresentation.markdown  -deduct -height 30 -vim`
+This created:
+```
+ tree ~/Desktop/examplePresentation-WeakPoint/
+~/Desktop/examplePresentation-WeakPoint/
+├── 1.markdown
+├── 2.markdown
+└── 3.markdown
+
+0 directories, 3 files
+```
+And lunched your plaintext presentation in the ~/Desktop/examplePresentation-WeakPoint/. You do not need to worry about sorting, as output of WeekPointSplitter.lua is always sortable, no metter of count of slides.
+
+Except simple splitting of given file in current working directory, WeekPointSplitter allowes you a bit more:
+ * enforce output dir via `-output`
+ * if necessary, to remove content of this directory via `-clean`
+  * **deduct** via `-deduct` switch the output directory location and name from input file
+ * to get rid of vim's `~` non existing line marker via `-height number` which adds *number* of empty spaces
+ * to overwrite default `--PAGE--` marker via `-break new_value`
+ * to generate slides,  or directly start WeakPoint via `-vim`
+ 
+if you wish to chain the tool, it uses stderr, except final output of output directory to stdout.
+ 
 ## License
 
 Copyright (c) 2012-2015 Pavel Tisnovsky (BSD-Like)
