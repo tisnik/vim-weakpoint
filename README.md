@@ -68,14 +68,14 @@ This allows you to write single file presentation, eg:
 
 ## Folding
 Unluckily folding must be disabled, and various levels of headlines are not distinguished
---PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE--
+--PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE--
 # Tables
  			cool	diff-able	images
 WeakPoint	x		x			only via url
 PowerPoint	no		no			depends on your opinion on cliparts
 
 So they works to...
---PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE--
+--PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE----PAGE---
 # Code
 single `code` is working. How does multi-line?
 ```
@@ -111,6 +111,7 @@ Except simple splitting of given file in current working directory, WeekPointSpl
   * **deduct** via `-deduct` switch the output directory location and name from input file
  * to get rid of vim's `~` non existing line marker via `-height number` which adds *number* of empty spaces
  * to overwrite default `--PAGE--` marker via `-break new_value`
+   * the page is split, everytime line *starts with* this pattern
  * to generate slides,  or directly start WeakPoint via `-vim`
  
 if you wish to chain the tool, it uses stderr, except final output of output directory to stdout.
