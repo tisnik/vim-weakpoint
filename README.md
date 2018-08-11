@@ -14,6 +14,10 @@ With [pathogen.vim](https://github.com/tpope/vim-pathogen):
     :cd directory_with_slides
     :WeakPoint
 
+or directly:
+
+    cd  directory_with_slides && vim  -c ":WeakPoint"
+
 If you use pathogen, you can use :Helptags to regenerate documentation.  You
 then can see ":h weakpoint" for more information.
 
