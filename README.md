@@ -12,6 +12,7 @@ Simple markdown-able plaintext slideshow tool for vim
      * [Example file](#example-file)
      * [Magic command](#magic-command)
      * [Options](#options)
+     * [Example result animation](#example-result-animation)
 * [License](#license)
 
 # vim-weakpoint
@@ -137,6 +138,8 @@ Except simple splitting of given file in current working directory, WeekPointSpl
  * to generate slides,  or directly start WeakPoint via `-vim`
  
 if you wish to chain the tool, it uses stderr, except final output of output directory to stdout.
+
+## Example result animation
 
 ![animation](https://user-images.githubusercontent.com/2904395/43991898-30990754-9d76-11e8-9060-867bb0136c06.gif)
 
