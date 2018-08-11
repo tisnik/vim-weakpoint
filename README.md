@@ -141,6 +141,8 @@ if you wish to chain the tool, it uses stderr, except final output of output dir
 
 ## Example result animation
 
+You can see individual images at: https://github.com/tisnik/vim-weakpoint/issues/1
+
 ![animation](https://user-images.githubusercontent.com/2904395/43991898-30990754-9d76-11e8-9060-867bb0136c06.gif)
 
 ## License
