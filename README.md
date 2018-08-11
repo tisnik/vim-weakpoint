@@ -22,11 +22,11 @@ or directly:
 * You then can see ":h weakpoint" for more information.
 * Don't forget that your slides must be **sortable** to have an order in slideshow
 
-## markdown support
-With markdown, which is nice both as plain text and as interpreted file, the vim-plain-text-presentation can become really fully featured. 
+## Markdown support
+Markdown, which is nice both as plain text and as interpreted file, will change vim-plain-text-presentation to really fully featured one.
 ### Enabling markdown
  * Install, again via pathogen,  [vim-markdown](https://github.com/plasticboy/vim-markdown):
- * suffix your slides as `xyz.markdown`
+ * suffix your slides with .markdown as `xyz.markdown`
  * out of the box you will get
     * bullets
     * bold and italic
@@ -44,7 +44,7 @@ For successful presentation, except usual pathogen settings of
     syntax on
     filetype plugin indent on
     
-it is **strongly recomended** to have  
+it is **strongly recomended** to have also
 
     let g:vim_markdown_folding_disabled = 1
     :set tabstop=4
