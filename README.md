@@ -33,6 +33,8 @@ With markdown, which is nice both as plain text and as interpreted file, the vim
     * urls
     * headlines
     * and much more... to create awesome plaintext preentation
+    
+**tip**: configure font of your terminal emulator to adapt to the screen/projector ... blindness of audience
 
 ## License
 
