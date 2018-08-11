@@ -32,9 +32,26 @@ With markdown, which is nice both as plain text and as interpreted file, the vim
     * bold and italic
     * urls
     * headlines
-    * and much more... to create awesome plaintext preentation
+    * code highlight
+    * and much more... to create awesome plaintext presentation
     
 **tip**: configure font of your terminal emulator to adapt to the screen/projector ... blindness of audience
+
+### Folding
+For successful presentation, except usual pathogen settings of
+
+    execute pathogen#infect()
+    syntax on
+    filetype plugin indent on
+    
+it is **strongly recomended** to have  
+
+    let g:vim_markdown_folding_disabled = 1
+    :set tabstop=4
+    :set shiftwidth=4
+    
+in `/.vimrc `; to avoid unexpected behavior of markdown during presentations (like auto folding or corrupted tables)
+
 
 ## License
 
