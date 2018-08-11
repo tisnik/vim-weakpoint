@@ -9,6 +9,9 @@ Simple markdown-able plaintext slideshow tool for vim
     * [Enabling markdown](#enabling-markdown)
     * [Folding](#folding)
 * [Single file presentation](#single-file-presentation)
+     * [Example file](#example-file)
+     * [Magic command](#magic-command)
+     * [Options](#options)
 * [License](#license)
 
 # vim-weakpoint
@@ -68,6 +71,7 @@ in `/.vimrc `; to avoid unexpected behavior of markdown during presentations (li
 ## Single file presentation
 The plaintext presentations (especially markdowned) may be awesome for some cases, however *creating* them with slide per file can be extremely uncomfortable. To help with this issue `~/.vim/bundle/vim-weakpoint/WeekPointSplitter.lua` was added. This lua (which you already have) script requires lua-posix (which you likely have too).
 
+### Example file
 This allows you to write single file presentation, eg:
 <pre>
 # WeakPoint markdown presentation
@@ -104,6 +108,9 @@ the one with empty lines:
 This is no more code
 	HTH
 </pre>
+
+### Magic command
+
 This file can then can be processed like eg:
 `lua  ~/.vim/bundle/vim-weakpoint/WeekPointSplitter.lua  ~/Desktop/examplePresentation.markdown  -deduct -height 30 -vim`
 This created:
@@ -117,6 +124,8 @@ This created:
 0 directories, 3 files
 ```
 And lunched your plaintext presentation in the ~/Desktop/examplePresentation-WeakPoint/. You do not need to worry about sorting, as output of WeekPointSplitter.lua is always sortable, no metter of count of slides.
+
+### Options
 
 Except simple splitting of given file in current working directory, WeekPointSplitter allowes you a bit more:
  * enforce output dir via `-output`
