@@ -1,6 +1,19 @@
 # vim-weakpoint
 
-Simple slideshow tool
+Simple markdown-able plaintext slideshow tool for vim
+
+### Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Markdown support](#markdown-support)
+    * [Enabling markdown](#enabling-markdown)
+    * [Folding](#folding)
+* [Single file presentation](#single-file-presentation)
+* [License](#license)
+
+# vim-weakpoint
+
+Simple markdown-able plaintext slideshow tool for vim
 
 ## Installation
 
