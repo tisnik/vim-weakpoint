@@ -24,7 +24,7 @@ local function boolToString(b)
     end
 end
 local function help(exit)
-    print("Spliting uttility for github.com/tisnik/vim-weakpoint (ideally with github.com/plasticboy/vim-markdown [which neds .markdown suffix])")
+    print("Splitting utility for github.com/tisnik/vim-weakpoint (ideally with github.com/plasticboy/vim-markdown [which needs .markdown suffix])")
     print("Will split your file to several slides, so you can run them as comfortbale console presentation")
     print("Single input parameter of inut file is necessary eg PtisnovsWeakPointSpliter my/file.markdown")
     print("Optional swithces")
